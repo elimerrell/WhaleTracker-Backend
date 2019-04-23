@@ -18,7 +18,7 @@ class Api::V1::WhalesController < ApplicationController
     private
     
     def whale_params
-        params.permit(:commmon_name, :genus, :species, :description, :range, :behaviors)
+        params.permit(:common_name, :genus, :species, :description, :range, :behaviors)
     end
     
     def find_whale

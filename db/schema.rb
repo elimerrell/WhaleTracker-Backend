@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 2019_04_23_152514) do
 
   create_table "sightings", force: :cascade do |t|
     t.integer "user_id"
+    t.integer "whale_sighting_id"
     t.string "title"
     t.text "description"
     t.integer "quantity"
