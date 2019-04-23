@@ -1,2 +1,0 @@
-class WhalesController < ApplicationController
-end
