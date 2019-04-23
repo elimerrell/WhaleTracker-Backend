@@ -1,6 +1,6 @@
 class Api::V1::SightingsController < ApplicationController
     before_action :find_sighting, only: [:update]
-    
+
     def index
         @sightings = Sighting.all
         render json: @sightings
@@ -18,7 +18,7 @@ class Api::V1::SightingsController < ApplicationController
     private
     
     def sighting_params
-        params.permit(:whale_sighting_id, :title, :description, :photo)
+        params.permit( :user_id, :title, :description, :quantitity, :latitude, :longitude, :landmark, :photo)
     end
     
     def find_sighting

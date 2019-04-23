@@ -15,19 +15,14 @@ ActiveRecord::Schema.define(version: 2019_04_23_152514) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "locations", force: :cascade do |t|
-    t.integer "sighting_id"
+  create_table "sightings", force: :cascade do |t|
+    t.integer "user_id"
+    t.string "title"
+    t.text "description"
+    t.integer "quantity"
     t.float "latitude"
     t.float "longitude"
     t.string "landmark"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "sightings", force: :cascade do |t|
-    t.integer "whale_sighting_id"
-    t.string "title"
-    t.text "description"
     t.string "photo"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -51,7 +46,7 @@ ActiveRecord::Schema.define(version: 2019_04_23_152514) do
   end
 
   create_table "whales", force: :cascade do |t|
-    t.string "commmon_name"
+    t.string "common_name"
     t.string "genus"
     t.string "species"
     t.text "description"
