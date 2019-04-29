@@ -14,6 +14,24 @@ class Api::V1::SightingsController < ApplicationController
         render json: { errors: @note.errors.full_messages }, status: :unprocessible_entity
         end
     end
+
+    def create
+        @sighting = Sighting.new(sighting_params)
+        if @sighting.save
+            render json: @sighting, status: :accepted
+        else 
+            render json: { errors: @sighting.errors.full_messages }, status: :unprocessible_entity
+        end 
+    end 
+   
+    def update
+      @sighting.update(sighting_params)
+      if @sighting.save
+        render json: @sighting, status: :accepted
+      else
+        render json: { errors: @sighting.errors.full_messages }, status: :unprocessible_entity
+      end
+    end
     
     private
     
