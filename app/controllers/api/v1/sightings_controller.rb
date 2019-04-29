@@ -18,7 +18,7 @@ class Api::V1::SightingsController < ApplicationController
     private
     
     def sighting_params
-        params.permit( :user_id, :title, :description, :quantitity, :latitude, :longitude, :landmark, :photo)
+        params.permit(:id, :user_id, :whale_sighting_id, :species, :orca_type, :description, :quantitity, :latitude, :longitude, :location, :photo)
     end
     
     def find_sighting
