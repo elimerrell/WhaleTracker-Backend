@@ -7,7 +7,7 @@ class CreateWhales < ActiveRecord::Migration[5.2]
       t.text :description
       t.string :range 
       t.text :behaviors 
-
+      t.string :photo
       t.timestamps
     end
   end
