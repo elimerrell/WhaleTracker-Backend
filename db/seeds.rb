@@ -13,20 +13,59 @@ def get_api_data
     end
   end
 
-  puts 'populating sightings'
 
+  User.create!(id: 1)
+  puts 'populating sightings'
     get_api_data.each do |sighting|
         Sighting.create!(
-            user_id: 1,
-            whale_sighting_id: nil,
-            species: sighting["species"],
-            quantity: sighting["quantity"],
-            description: sighting["description"],
-            latitude: sighting["latitude"],
-            longitude: sighting["longitude"],
-            location: sighting["location"],
-            orca_type: sighting["orca_type"]
+          user_id: 1,
+          whale_sighting_id: nil,
+          species: sighting["species"],
+          quantity: sighting["quantity"],
+          description: sighting["description"],
+          latitude: sighting["latitude"],
+          longitude: sighting["longitude"],
+          location: sighting["location"],
+          orca_type: sighting["orca_type"]
         )
 
 
     end 
+  
+  Whale.create!(
+    common_name: "Southern Resident Orca",
+    genus: "Orcinus",
+    species: "orca",
+    photo: "https://en.wikipedia.org/wiki/Killer_whale#/media/File:Killerwhales_jumping.jpg"
+  )
+
+  Whale.create!(
+    common_name: "Transient Orca",
+    genus: "Orcinus",
+    species: "orca",
+    photo: "https://en.wikipedia.org/wiki/Killer_whale#/media/File:Killerwhales_jumping.jpg"
+  )
+
+  Whale.create!(
+    common_name: "Humpback",
+    genus: "Megaptera",
+    species: "novaeangliae",
+    description: "Large baleen whale ranging from 14-16 meters in length. Humpback whales can weight up to ",
+    photo: "https://en.wikipedia.org/wiki/Humpback_whale#/media/File:Humpback_Whale_underwater_shot.jpg"
+  )
+
+  Whale.create!(
+    common_name: "Minke",
+    genus: "Balaenoptera",
+    species: "acutorostrata",
+    photo: "https://en.wikipedia.org/wiki/Minke_whale#/media/File:Minke_Whale_(NOAA).jpg"
+  )
+
+  Whale.create!(
+    common_name: "Gray",
+    genus: "Eschrichtius",
+    species:"robustus",
+    description: "Baleen whale with dark gray color that is often covered in white patches. Can grow to lenths of 14-15 meters and weights up to 40 tons",
+    range: "Baja Peninsula to Alaska",
+    photo: "https://en.wikipedia.org/wiki/Gray_whale#/media/File:Ballena_gris_adulta_con_su_ballenato.jpg"
+  )

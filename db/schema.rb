@@ -20,12 +20,11 @@ ActiveRecord::Schema.define(version: 2019_04_23_152514) do
     t.integer "whale_sighting_id"
     t.string "species"
     t.integer "quantity"
-    t.string "orca_type"
-    t.text "description"
+    t.string "description"
     t.float "latitude"
     t.float "longitude"
     t.string "location"
-    t.string "photo"
+    t.string "orca_type"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -54,6 +53,7 @@ ActiveRecord::Schema.define(version: 2019_04_23_152514) do
     t.text "description"
     t.string "range"
     t.text "behaviors"
+    t.string "photo"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
