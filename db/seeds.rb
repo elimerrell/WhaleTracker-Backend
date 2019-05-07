@@ -36,14 +36,14 @@ def get_api_data
     common_name: "Southern Resident Orca",
     genus: "Orcinus",
     species: "orca",
-    photo: "https://en.wikipedia.org/wiki/Killer_whale#/media/File:Killerwhales_jumping.jpg"
+    photo: "../assets/images/orca.jpg"
   )
 
   Whale.create!(
     common_name: "Transient Orca",
     genus: "Orcinus",
     species: "orca",
-    photo: "https://en.wikipedia.org/wiki/Killer_whale#/media/File:Killerwhales_jumping.jpg"
+    photo: "../assets/images/orca.jpg"
   )
 
   Whale.create!(
@@ -51,14 +51,14 @@ def get_api_data
     genus: "Megaptera",
     species: "novaeangliae",
     description: "Large baleen whale ranging from 14-16 meters in length. Humpback whales can weight up to ",
-    photo: "https://en.wikipedia.org/wiki/Humpback_whale#/media/File:Humpback_Whale_underwater_shot.jpg"
+    photo: "../assets/images/humpback.jpeg"
   )
 
   Whale.create!(
     common_name: "Minke",
     genus: "Balaenoptera",
     species: "acutorostrata",
-    photo: "https://en.wikipedia.org/wiki/Minke_whale#/media/File:Minke_Whale_(NOAA).jpg"
+    photo: "../assets/images/Minke_Whale.jpg"
   )
 
   Whale.create!(
@@ -67,5 +67,5 @@ def get_api_data
     species:"robustus",
     description: "Baleen whale with dark gray color that is often covered in white patches. Can grow to lenths of 14-15 meters and weights up to 40 tons",
     range: "Baja Peninsula to Alaska",
-    photo: "https://en.wikipedia.org/wiki/Gray_whale#/media/File:Ballena_gris_adulta_con_su_ballenato.jpg"
+    photo: "../assets/images/gray_whale.jpg"
   )
