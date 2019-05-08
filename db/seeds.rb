@@ -20,6 +20,7 @@ def get_api_data
         Sighting.create!(
           user_id: 1,
           whale_sighting_id: nil,
+          date: sighting["sighted_at"],
           species: sighting["species"],
           quantity: sighting["quantity"],
           description: sighting["description"],

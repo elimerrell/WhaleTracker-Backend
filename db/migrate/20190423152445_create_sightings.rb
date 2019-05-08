@@ -3,6 +3,7 @@ class CreateSightings < ActiveRecord::Migration[5.2]
     create_table :sightings do |t|
       t.integer :user_id
       t.integer :whale_sighting_id
+      t.datetime :date
       t.string :species
       t.integer :quantity
       t.string :description
