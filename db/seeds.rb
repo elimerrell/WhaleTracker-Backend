@@ -26,7 +26,6 @@ def get_api_data
           latitude: sighting["latitude"],
           longitude: sighting["longitude"],
           location: sighting["location"],
-          orca_type: sighting["orca_type"]
         )
 
 
