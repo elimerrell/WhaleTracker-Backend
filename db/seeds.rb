@@ -72,7 +72,7 @@ def get_api_data
     common_name: "Gray",
     genus: "Eschrichtius",
     species:"robustus",
-    description: "Baleen whale with dark gray color that is often covered in white patches. Can grow to lenths of 14-15 meters and weights up to 40 tons. Gray whales have a distinctive heart-shaped blow.",
+    description: "Baleen whale with dark gray color that is often covered in white patches. Can grow to lengths of 14-15 meters and weights up to 40 tons. Gray whales have a distinctive heart-shaped blow.",
     range: "Gray whales have a long migration that extends from the Baja Peninsula to Alaska",
     photo: "https://s3.amazonaws.com/whale-tracker/gray_whale-1.jpg"
   )
