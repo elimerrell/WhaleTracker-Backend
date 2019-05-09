@@ -55,7 +55,7 @@ def get_api_data
     genus: "Megaptera",
     species: "novaeangliae",
     description: "Large baleen whale ranging from 14-16 meters in length. Humpback whales can weight between 35 to 50 tons. Humpbacks have long, distinctive pectoral fins that can be one third the length of their body. These whales have large throat pleats that expand during feeding.",
-    range: "Humpbacks have one of the longest migrations of any animal on Earth. The North Pacific population of Humpbacks spend their summers feeding in the cool Pacific waters from California to Alaska. In the winter, these whales migrate to warmer waters for breeding and may travel as far as Hawaii and Mexico."
+    range: "Humpbacks have one of the longest migrations of any animal on Earth. The North Pacific population of Humpbacks spend their summers feeding in the cool Pacific waters from California to Alaska. In the winter, these whales migrate to warmer waters for breeding and may travel as far as Hawaii and Mexico.",
     photo: "https://s3.amazonaws.com/whale-tracker/humpback-1.jpeg"
   )
 
